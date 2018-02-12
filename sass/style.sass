@@ -1,0 +1,52 @@
+/* main styles*/
+$darkcolor: #202020
+$redcolor: #e25050
+$whitecolor: #fefefe
+body
+  font: normal 16px "Arial", sans-serif
+  margin: 0
+  padding: 0
+.wrapper
+  margin: 0 auto
+  width: 90%
+/*header*/
+.header
+  background-color: $darkcolor
+  padding: 5vh 0
+.header-logo
+  float: left
+.header-nav
+  float: right
+  margin: 0
+.header-nav__li
+  display: inline-block
+  list-style: none
+.header-nav__a
+  color: $whitecolor
+  padding: 10px 20px
+  text-decoration: none
+  text-transform: uppercase
+.header-nav__a
+  &:hover
+    background-color: $redcolor
+.header-nav-icon__li
+  float: right
+  display: none
+.clearfix
+  &::after
+    content: ""
+    display: block
+    clear: both
+/*responsive menu*/
+@media screen and (max-width: 680px)
+  .header-nav__li
+    display: none
+  .header-nav-icon__li
+    display: block
+  .responsive
+    float: none
+    background-color: $redcolor
+    width: 100%
+  .responsive li.header-nav__li
+    display: block
+    text-align: center
