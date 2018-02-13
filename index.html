@@ -7,33 +7,34 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="header clearfix">
-      <div class="wrapper">
+    <header class="header">
+      <div class="wrapper header_flexible">
         <div class="header-logo">
           <a href="#" class="header-logo__a">
-            <span>Irina</span>
+            <!--<span>Irina</span>-->
           </a>
         </div>
-        <div class="header-nav-icon__li">
-          <a href="javascript:void(0);" class="header-nav__a" style="font-size: 15px;" onclick="myFunction()">&#9776;</a>
+        <div class="header-menu" id="navHeader">
+          <ul class="header-nav">
+            <li class="header-nav__li">
+              <a href="#" class="header-nav__a">Главная</a>
+            </li>
+            <li class="header-nav__li">
+              <a href="#" class="header-nav__a">Услуги</a>
+            </li>
+            <li class="header-nav__li">
+              <a href="#" class="header-nav__a">Галерея</a>
+            </li>
+            <li class="header-nav__li">
+              <a href="#" class="header-nav__a">Цены</a>
+            </li>
+            <li class="header-nav__li">
+              <a href="#" class="header-nav__a">Контакты</a>
+            </li>
+          </ul>
         </div>
-        <ul class="header-nav" id="navHeader">
-          <li class="header-nav__li">
-            <a href="#" class="header-nav__a">Главная</a>
-          </li>
-          <li class="header-nav__li">
-            <a href="#" class="header-nav__a">Услуги</a>
-          </li>
-          <li class="header-nav__li">
-            <a href="#" class="header-nav__a">Галерея</a>
-          </li>
-          <li class="header-nav__li">
-            <a href="#" class="header-nav__a">Цены</a>
-          </li>
-          <li class="header-nav__li">
-            <a href="#" class="header-nav__a">Контакты</a>
-          </li>
-        </ul>
+        <label class="label"><input type="checkbox" class="checkbox"><span class="header-nav-icon" onclick="myFunction()"><span class="header-nav-icon__span"></span></span></label>
+        <!--<a href="javascript:void(0);" class="header-nav-icon" onclick="myFunction()"><span class="header-nav-icon__span"></span></a>-->
       </div>
     </header>
     <section class="slider">
@@ -41,23 +42,23 @@
     </section>
     <section class="services">
       <div class="wrapper">
-        <h1 class="services__h1">персональный тренинг</h1>
+        <h1 class="services__h1">персональный тренинг!</h1>
         <p class="services__p">Индивидуальный подход к каждому!</p>
         <div class="services-columns">
           <div class="services-columns-item">
-            <h2 class="services-columns-item__h2">Набор мышечной массы</h2>
+            <h2 class="services-columns-item__h2_icon1">Набор массы</h2>
             <p class="services-columns-item__p">Maecenas mattis vitae tellus vel interdum. Quisque lacinia mauris id convallis pretium. Aliquam id odio sit amet mauris .</p>
           </div>
           <div class="services-columns-item">
-            <h2 class="services-columns-item__h2">Похудение</h2>
+            <h2 class="services-columns-item__h2_icon2">Похудение</h2>
             <p class="services-columns-item__p">Maecenas mattis vitae tellus vel interdum. Quisque lacinia mauris id convallis pretium. Aliquam id odio sit amet mauris .</p>
           </div>
           <div class="services-columns-item">
-            <h2 class="services-columns-item__h2">Функциональный тренинг</h2>
+            <h2 class="services-columns-item__h2_icon3">Кросстренинг</h2>
             <p class="services-columns-item__p">Maecenas mattis vitae tellus vel interdum. Quisque lacinia mauris id convallis pretium. Aliquam id odio sit amet mauris .</p>
           </div>
           <div class="services-columns-item">
-            <h2 class="services-columns-item__h2">Программа питания</h2>
+            <h2 class="services-columns-item__h2_icon4">Питание</h2>
             <p class="services-columns-item__p">Maecenas mattis vitae tellus vel interdum. Quisque lacinia mauris id convallis pretium. Aliquam id odio sit amet mauris .</p>
           </div>
         </div>
@@ -88,7 +89,8 @@
         <div class="prices-container">
           <div class="prices-container-item">
             <div class="prices-container-item-left">
-              
+              <p class="prices-container-item-left-top-p__p">standart</p>
+              <p class="prices-container-item-left-bottom-p__p">1000</p>
             </div>
             <div class="prices-container-item-right">
               
@@ -96,7 +98,8 @@
           </div>
           <div class="prices-container-item">
             <div class="prices-container-item-left">
-              
+              <p class="prices-container-item-left-top-p__p">advanced</p>
+              <p class="prices-container-item-left-bottom-p__p">1100</p>
             </div>
             <div class="prices-container-item-right">
               
@@ -104,7 +107,8 @@
           </div>
           <div class="prices-container-item">
             <div class="prices-container-item-left">
-              
+              <p class="prices-container-item-left-top-p__p">business</p>
+              <p class="prices-container-item-left-bottom-p__p">1500</p>
             </div>
             <div class="prices-container-item-right">
               
@@ -119,7 +123,7 @@
     <footer class="footer">
       <div class="wrapper">
         <div class="footer-top">
-        
+          <p>SOME TEXT</p>
         </div>
         <div class="footer-bottom">
           <div class="footer-bottom-left">
@@ -127,7 +131,12 @@
           </div>
           <div class="footer-bottom-right">
             <form action="" class="footer__form">
-             
+             <!--Заголовки тут и сверху-->
+             <input type="text">
+             <input type="email">
+             <input type="tel">
+             <textarea name="" id="" cols="30" rows="10"></textarea>
+             <input type="submit">
             </form>
           </div>
         </div>
