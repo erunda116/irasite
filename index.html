@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    <div class="fixed-button">
+      <a href="#" onclick="callMe()" onclick="callMeOut()" class="fixed-button__a"></a>
+    </div>
+    <div class="call" id="call"></div>
     <header class="header">
       <div class="wrapper header_flexible">
         <div class="header-logo">
@@ -20,128 +24,227 @@
               <a href="#" class="header-nav__a">Главная</a>
             </li>
             <li class="header-nav__li">
-              <a href="#" class="header-nav__a">Услуги</a>
+              <a href="#services" class="header-nav__a">Услуги</a>
             </li>
             <li class="header-nav__li">
-              <a href="#" class="header-nav__a">Галерея</a>
+              <a href="#galery" class="header-nav__a">Галерея</a>
             </li>
             <li class="header-nav__li">
-              <a href="#" class="header-nav__a">Цены</a>
+              <a href="#prices" class="header-nav__a">Цены</a>
             </li>
             <li class="header-nav__li">
-              <a href="#" class="header-nav__a">Контакты</a>
+              <a href="#contacts" class="header-nav__a">Контакты</a>
             </li>
           </ul>
         </div>
         <label class="label"><input type="checkbox" class="checkbox"><span class="header-nav-icon" onclick="myFunction()"><span class="header-nav-icon__span"></span></span></label>
-        <!--<a href="javascript:void(0);" class="header-nav-icon" onclick="myFunction()"><span class="header-nav-icon__span"></span></a>-->
       </div>
     </header>
     <section class="slider">
-      
+      <div class="slider-item">
+        <img src="img/slide-photo-1.jpg" alt="#" class="slider-item__img">
+      </div>
+      <div class="slider-item">
+        <img src="img/slide-photo-2.jpg" alt="#" class="slider-item__img">
+      </div>
+      <div class="slider-item">
+        <img src="img/slide-photo-3.jpg" alt="#" class="slider-item__img">
+      </div>
+      <a class="slider-item__prev" onclick="plusSlides(-1)"></a>
+      <a class="slider-item__next" onclick="plusSlides(1)"></a>
     </section>
-    <section class="services">
+    <section class="services" id="services">
       <div class="wrapper">
         <h1 class="services__h1">персональный тренинг!</h1>
         <p class="services__p">Индивидуальный подход к каждому!</p>
         <div class="services-columns">
           <div class="services-columns-item">
-            <h2 class="services-columns-item__h2_icon1">Набор массы</h2>
+            <h2 class="services-columns-item__h2"><span class="services-columns-item__span_icon1"></span>Набор массы</h2>
             <p class="services-columns-item__p">Maecenas mattis vitae tellus vel interdum. Quisque lacinia mauris id convallis pretium. Aliquam id odio sit amet mauris .</p>
           </div>
           <div class="services-columns-item">
-            <h2 class="services-columns-item__h2_icon2">Похудение</h2>
+            <h2 class="services-columns-item__h2"><span class="services-columns-item__span_icon2"></span>Похудение</h2>
             <p class="services-columns-item__p">Maecenas mattis vitae tellus vel interdum. Quisque lacinia mauris id convallis pretium. Aliquam id odio sit amet mauris .</p>
           </div>
           <div class="services-columns-item">
-            <h2 class="services-columns-item__h2_icon3">Кросстренинг</h2>
+            <h2 class="services-columns-item__h2"><span class="services-columns-item__span_icon3"></span>Кросстренинг</h2>
             <p class="services-columns-item__p">Maecenas mattis vitae tellus vel interdum. Quisque lacinia mauris id convallis pretium. Aliquam id odio sit amet mauris .</p>
           </div>
           <div class="services-columns-item">
-            <h2 class="services-columns-item__h2_icon4">Питание</h2>
+            <h2 class="services-columns-item__h2"><span class="services-columns-item__span_icon4"></span>Питание</h2>
             <p class="services-columns-item__p">Maecenas mattis vitae tellus vel interdum. Quisque lacinia mauris id convallis pretium. Aliquam id odio sit amet mauris .</p>
           </div>
         </div>
       </div>
     </section>
-    <section class="galery">
+    <section class="galery" id="galery">
       <div class="wrapper">
         <h2 class="galery__h2">Галерея</h2>
         <div class="galery-container">
-          <div class="galery-container-item">
-            <img src="" alt="">
+          <figure class="galery-container-item">
+            <img src="img/photo1.jpg" alt="" class="galery-container-item__img">
+            <figurecaption class="galery-container-item__figurecaption">
+              <p class="figurecaption__p">Lorem ipsum</p>
+              <span class="figurecaption__span">Lorem ipsum iefgoi fd jho sd fgisdfj sdgsd</span>
+            </figurecaption>
+            <a href="#" onclick="galeryShow()" class="galery-container-item__a"></a>
+          </figure>
+          <figure class="galery-container-item">
+            <img src="img/photo2.jpg" alt="" class="galery-container-item__img">
+            <figurecaption class="galery-container-item__figurecaption">
+              <p class="figurecaption__p">Lorem ipsum</p>
+              <span class="figurecaption__span">Lorem ipsum iefgoi fd jho sd fgisdfj sdgsd</span>
+            </figurecaption>
+            <a href="#" onclick="galeryShow()" class="galery-container-item__a"></a>
+          </figure>
+          <figure class="galery-container-item">
+            <img src="img/photo3.jpg" alt="" class="galery-container-item__img">
+            <figurecaption class="galery-container-item__figurecaption">
+              <p class="figurecaption__p">Lorem ipsum</p>
+              <span class="figurecaption__span">Lorem ipsum iefgoi fd jho sd fgisdfj sdgsd</span>
+            </figurecaption>
+            <a href="#" class="galery-container-item__a"></a>
+          </figure>
+          <figure class="galery-container-item">
+            <img src="img/photo1.jpg" alt="" class="galery-container-item__img">
+            <figurecaption class="galery-container-item__figurecaption">
+              <p class="figurecaption__p">Lorem ipsum</p>
+              <span class="figurecaption__span">Lorem ipsum iefgoi fd jho sd fgisdfj sdgsd</span>
+            </figurecaption>
+            <a href="#" class="galery-container-item__a"></a>
+          </figure>
+        </div>
+      </div>
+      <div class="modal" id="modal">
+        <div class="modal-content">
+          <div class="modal-item">
+            <div class="modal-item-img">
+              <img src="img/photo1.jpg" alt="#" class="modal-item__img">
+            </div>
           </div>
-          <div class="galery-container-item">
-            <img src="" alt="">
+          <div class="modal-item">
+            <div class="modal-item-img">
+            <img src="img/photo2.jpg" alt="#" class="modal-item__img">
+            </div>
           </div>
-          <div class="galery-container-item">
-            <img src="" alt="">
+          <div class="modal-item">
+            <div class="modal-item-img">
+              <img src="img/photo3.jpg" alt="#" class="modal-item__img">
+            </div>
           </div>
-          <div class="galery-container-item">
-            <img src="" alt="">
-          </div>
+          <a class="slider-item__prev" onclick="plusModalSlides(-1)"></a>
+          <a class="slider-item__next" onclick="plusModalSlides(1)"></a>
+          <a href="#" class="modal__button" onclick="modalClose()"><span class="modal__button_close"></span></a> <!--название классов-->
         </div>
       </div>
     </section>
-    <section class="prices">
+    <section class="prices" id="prices">
       <div class="wrapper">
         <h2 class="prices__h2">Цены</h2>
         <div class="prices-container">
           <div class="prices-container-item">
             <div class="prices-container-item-left">
+              <span class="prices-container-item-left__span_icon01"></span>
               <p class="prices-container-item-left-top-p__p">standart</p>
               <p class="prices-container-item-left-bottom-p__p">1000</p>
             </div>
             <div class="prices-container-item-right">
-              
+              <ul class="prices-container-item-right-list">
+                <li class="prices-container-item-right-list__li">
+                  <a href="" class="prices-container-item-right-list__a">Boxed And Wide Versions</a>
+                </li>
+                <li class="prices-container-item-right-list__li">
+                  <a href="" class="prices-container-item-right-list__a">Event Calendar Supported</a>
+                </li>
+                <li class="prices-container-item-right-list__li">
+                  <a href="" class="prices-container-item-right-list__a">Powerful Admin Panel</a>
+                </li>
+                <li class="prices-container-item-right-list__li">
+                  <a href="" class="prices-container-item-right-list__a">Dark & Light Version</a>
+                </li>
+              </ul>
             </div>
           </div>
-          <div class="prices-container-item">
+          <div class="prices-container-item prices-active">
             <div class="prices-container-item-left">
+              <span class="prices-container-item-left__span_icon02"></span>
               <p class="prices-container-item-left-top-p__p">advanced</p>
               <p class="prices-container-item-left-bottom-p__p">1100</p>
             </div>
             <div class="prices-container-item-right">
-              
+              <ul class="prices-container-item-right-list">
+                <li class="prices-container-item-right-list__li">
+                  <a href="" class="prices-container-item-right-list__a">Boxed And Wide Versions</a>
+                </li>
+                <li class="prices-container-item-right-list__li">
+                  <a href="" class="prices-container-item-right-list__a">Event Calendar Supported</a>
+                </li>
+                <li class="prices-container-item-right-list__li">
+                  <a href="" class="prices-container-item-right-list__a">Powerful Admin Panel</a>
+                </li>
+                <li class="prices-container-item-right-list__li">
+                  <a href="" class="prices-container-item-right-list__a">Dark & Light Version</a>
+                </li>
+              </ul>
             </div>
           </div>
           <div class="prices-container-item">
             <div class="prices-container-item-left">
+              <span class="prices-container-item-left__span_icon03"></span>
               <p class="prices-container-item-left-top-p__p">business</p>
               <p class="prices-container-item-left-bottom-p__p">1500</p>
             </div>
             <div class="prices-container-item-right">
-              
+              <ul class="prices-container-item-right-list">
+                <li class="prices-container-item-right-list__li">
+                  <a href="" class="prices-container-item-right-list__a">Boxed And Wide Versions</a>
+                </li>
+                <li class="prices-container-item-right-list__li">
+                  <a href="" class="prices-container-item-right-list__a">Event Calendar Supported</a>
+                </li>
+                <li class="prices-container-item-right-list__li">
+                  <a href="" class="prices-container-item-right-list__a">Powerful Admin Panel</a>
+                </li>
+                <li class="prices-container-item-right-list__li">
+                  <a href="" class="prices-container-item-right-list__a">Dark & Light Version</a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="map">
+    <section id="map">
       
     </section>
     <footer class="footer">
       <div class="wrapper">
-        <div class="footer-top">
-          <p>SOME TEXT</p>
+        <div class="footer-top" id="contacts">
+          <div class="footer-top-container">
+            <a href="#"><span class="footer-top-container__span-icon001"></span></a>
+            <a href="#"><span class="footer-top-container__span-icon002"></span></a>
+            <a href="#"><span class="footer-top-container__span-icon003"></span></a>
+            <a href="#"><span class="footer-top-container__span-icon004"></span></a>
+          </div>
         </div>
         <div class="footer-bottom">
-          <div class="footer-bottom-left">
-          
-          </div>
-          <div class="footer-bottom-right">
-            <form action="" class="footer__form">
-             <!--Заголовки тут и сверху-->
-             <input type="text">
-             <input type="email">
-             <input type="tel">
-             <textarea name="" id="" cols="30" rows="10"></textarea>
-             <input type="submit">
-            </form>
-          </div>
+          <form action="" class="footer-form__form">
+            <h2 class="footer-form__h2">Записаться на тренировку!</h2>
+            <div class="footer-form-input-container">
+              <input type="text" class="footer-form__input" id="userName" placeholder="Имя">
+              <input type="email" class="footer-form__input" id="email" placeholder="E-mail">
+              <input type="tel" class="footer-form__input" id="phone" placeholder="Телефон">
+            </div>
+            <textarea name="" id="text" cols="30" rows="10" class="footer-form__textarea" placeholder="Ваше сообщение"></textarea>
+            <input type="submit" class="footer-form__input_submit" id="submitForm" value="Отправить заявку">
+          </form>
         </div>
       </div>
     </footer>
     <script src="js/common.js"></script>
+    <script
+async defer
+src ="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJawJQdilxWX146X64c33fFQN4NJFJsQw&callback=initMap">
+</script>
   </body>
 </html>
